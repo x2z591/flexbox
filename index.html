@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<htmL>
+    <head>
+        <title>FLEXBOX</title>
+    </head>
+    <body><br><br><br>
+        <h1>FLEXBOX</h1><br><br><br><br>
+        <p>exemple: #... {<br>
+            ..........display: flex;<br>
+        }
+        </p><br><br><br><br><br><br>
+        <style>
+
+            h1 {
+                display: flex;
+                justify-content: center;
+            }
+
+            .table_component {
+                overflow: auto;
+                width: 100%;
+            }
+            
+            .table_component table {
+                border: 1px solid #dededf;
+                height: 100%;
+                width: 100%;
+                table-layout: fixed;
+                border-collapse: collapse;
+                border-spacing: 1px;
+                text-align: left;
+            }
+            
+            .table_component caption {
+                caption-side: top;
+                text-align: left;
+            }
+            
+            .table_component th {
+                border: 1px solid #dededf;
+                background-color: #eceff1;
+                color: #000000;
+                padding: 5px;
+            }
+            
+            .table_component td {
+                border: 1px solid #dededf;
+                background-color: #ffffff;
+                color: #000000;
+                padding: 5px;
+            }
+            </style>
+            <div class="table_component">
+            <table>
+                <thead>
+                    <tr>
+                        <th>justify-content</th>
+                        <th>align-items</th>
+                        <th>flex-direction</th>
+                        <th>flex-wrap</th>
+                        <th>align-content</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>flex-star :</strong>Les éléments s'alignent au côté gauche du conteneur.<t/td>
+                        <td><strong>flex-star :</strong>Les éléments s'alignent au haut du conteneur.</td>
+                        <td><strong>row :</strong>Les éléments sont disposés dans la même direction que le texte.</td>
+                        <td><strong>nowrap :</strong>Tous les éléments sont tenus sur une seule ligne.</td>
+                        <td><strong>flex-start :</strong>Les lignes sont amassées dans le haut du conteneur.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>flex-end :</strong>Les éléments s'alignent au côté droit du conteneur.</td>
+                        <td><strong>flex-end :</strong>Les éléments s'alignent au bas du conteneur.</td>
+                        <td><strong>row-reverse :</strong>Les éléments sont disposés dans la direction opposée au texte.</td>
+                        <td><strong>wrap :</strong>Les éléments s'enveloppent sur plusieurs lignes au besoin.</td>
+                        <td><strong>flex-end :</strong>Les lignes sont amassées dans le bas du conteneur.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>center :</strong>Les éléments s'alignent au centre du conteneur.</td>
+                        <td><strong>center :</strong>Les éléments s'alignent au centre vertical du conteneur.</td>
+                        <td><strong>column :</strong>Les éléments sont disposés de haut en bas.</td>
+                        <td><strong>wrap-reverse :</strong>Les éléments s'enveloppent sur plusieurs lignes dans l'ordre inversé.</td>
+                        <td><strong>center :</strong>Les lignes sont amassées dans le centre vertical du conteneur.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>space-between :</strong> Les éléments s'affichent avec un espace égal entre eux.</td>
+                        <td><strong>baseline :</strong>Les éléments s'alignent à la ligne de base du conteneur.</td>
+                        <td><strong>column-reverse :</strong>Les éléments sont disposés de bas en haut.</td>
+                        <td><strong></strong></td>
+                        <td><strong>space-between</strong>Les lignes s'affichent avec un espace égal entre eux</td>
+                    </tr>
+                    <tr>
+                        <td><strong>space-around :</strong> Les éléments s'affichent avec un espacement égal à l'entour d'eux.</td>
+                        <td><strong>stretch :</strong> Les éléments sont étirés pour s'adapter au conteneur.</td>
+                        <td><strong></strong></td>
+                        <td><strong></strong></td>
+                        <td><strong>space-around</strong>Les lignes s'affichent avec un espace égal autour d'eux</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><strong>stretch :</strong>Les lignes sont étirées pour s'adapter au conteneur.</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div><br><br>
+            <p><strong>justify-content</strong> = aligne les éléments horizontalement et accepte les valeurs suivantes.</p><br>
+            <p><strong>align-items</strong> = aligne les éléments verticalement et accepte les valeurs suivantes.</p><br>
+            <p><strong>flex-direction</strong> = la direction dans laquelle les éléments sont placés dans le conteneur.</p><br>
+            <p><strong>order</strong> = Parfois, inverser l'ordre de la rangée ou la colonne ne suffit pas. Dans ces cas, on peut appliquer la propriété order à des éléments individuels. Par défaut, les éléments ont une valeur de 0, mais on peut utiliser cette propriété pour changer la valeur à un entier positif ou négatif.</p><br>
+            <p><strong>align-self</strong> = Une autre propriété que vous pouvez appliquer sur des éléments individuels est align-self. Cette propriété accepte les mêmes valeurs que align-items, mais s'applique seulement à l'élément ciblé.</p><br>
+            <p><strong>flex-wrap</strong> = quand élément est écrasé</p><br>
+            <p><strong>align-content</strong> = pour définir comment plusieurs lignes sont espacées de l'une à l'autre.</p>
+    </body>
+</htmL>
